@@ -9,7 +9,7 @@ print("Hello, and welcome to this FoldX data processing program! :)")
 print("This is the test for cmk.")
 
 # set working directory to folder with FoldX output files
-os.chdir("/Users/Marie/Desktop/DataCrunching/cmk")
+os.chdir("") # <- Insert working directory pathway between ""
 
 # Import and clean up files
 files = os.listdir()
