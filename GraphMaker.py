@@ -2,7 +2,8 @@ import os
 import pandas as pd
 from matplotlib import pyplot as plt
 
-os.chdir("/Users/Marie/Desktop/DataCrunching/Platereaders/Processing")
+# Set working directory to folder with compatible excel files containing plate reader data
+os.chdir("") # <- Insert working directory pathway between ""
 
 print("Hello, and welcome to this data visualisation and comparison program!")
 print("Please enter the names of your excel files (remember .xlsx suffix).")
@@ -84,6 +85,7 @@ else:
 for legobj in leg.legendHandles:
     legobj.set_linewidth(5.0)
  
+# Save figure
 save = input("Do you want to save the figure? (y/n): ")
 
 if save == "y":
